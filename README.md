@@ -2,10 +2,13 @@
 
 https://github.com/anelisekathryn/job-hunt
 
-Enter app description.
+This app is designed to organize of all those job applications when you're on the hunt for a new career. Enter important job details and keep track of your application status.
 
 ## Wireframes
-Wireframe screen shots here.
+
+![image](https://user-images.githubusercontent.com/90531123/138368114-792f12c0-504d-4de8-9ea2-903388a2deaf.png)
+
+![image](https://user-images.githubusercontent.com/90531123/138368173-4cf974f1-4838-4e5d-8ba0-ef9d68e35f36.png)
 
 
 ## API & Data Sample
