@@ -84,22 +84,23 @@ API Documentation: https://airtable.com/app3Ssx5AebBUdzmn/api/docs
 ## POST MVP FEATURES
 - Change status on homepage list (not just on detail page)
 - Allow user to edit job details.
-- Delete or "archive" job application.
+- Allow user to delete or "archive" job application.
 - Add a second API for random motivational quotes on home page
 - Add a resource section with links to career sites, etc.
 - Add to-do list within each job detail page.
 - Add a user log-in so the app can be used in real-life scenarios.
 
 ## Project Schedule
-| Date           | Deliverable      | Status      |
-| :------------- |:-----------------| :----------:|
-| October 1    | Deliverable here     | Incomplete      |
-| October 3    | Deliverable here     | Incomplete      |
-| October 4    | Deliverable here     | Incomplete      |
-| October 5    | Deliverable here     | Incomplete      |
-| October 6    | Deliverable here     | Incomplete      |
-| October 7    | Deliverable here     | Incomplete      |
-| October 8    | Deliverable here     | Incomplete      |
+| Date             | Deliverable      | Status      |
+| :--------------- |:-----------------| :----------:|
+| October 21       | Prep project pitch / draw wireframes / Establish API      | Incomplete      |
+| October 22       | Project Pitch / Connect API / Initial frame of app     | Incomplete      |
+| October 23–24    | Complete homepage and detail page components     | Incomplete      |
+| October 25       | Deliverable here     | Incomplete      |
+| October 26       | Deploy Project / Deliverable here     | Incomplete      |
+| October 27       | Deliverable here     | Incomplete      |
+| October 28       | Deliverable here     | Incomplete      |
+| October 29       | Project presentation     | Incomplete      |
 
 ## Project Timeframe:
 | Component                        | Priority  | Estimated Time  | Actual Time  |
