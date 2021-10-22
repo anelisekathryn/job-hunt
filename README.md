@@ -97,10 +97,10 @@ API Documentation: https://airtable.com/app3Ssx5AebBUdzmn/api/docs
 | October 21       | Prep project pitch / draw wireframes / Establish API with Postman      | Complete      |
 | October 22       | Project Pitch / Connect API / Set up React App    | Incomplete      |
 | October 23–24    | Complete homepage and detail page components     | Incomplete      |
-| October 25       | Deliverable here     | Incomplete      |
-| October 26       | Deploy Project / Deliverable here     | Incomplete      |
-| October 27       | Deliverable here     | Incomplete      |
-| October 28       | Deliverable here     | Incomplete      |
+| October 25       | Work on components     | Incomplete      |
+| October 26       | Deploy Project / Work on components     | Incomplete      |
+| October 27       | CSS Styling / Post MVP Goals     | Incomplete      |
+| October 28       | Post MVP goals / Code clean up     | Incomplete      |
 | October 29       | Project presentation     | Incomplete      |
 
 ## Project Timeframe:
