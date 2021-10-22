@@ -83,6 +83,7 @@ API Documentation: https://airtable.com/app3Ssx5AebBUdzmn/api/docs
 
 ## POST MVP FEATURES
 - Change status on homepage list (not just on detail page)
+- Use Bootstrap or MUI to incorporate additional styling.
 - Allow user to edit job details.
 - Allow user to delete or "archive" job application.
 - Add a second API for random motivational quotes on home page
@@ -93,8 +94,8 @@ API Documentation: https://airtable.com/app3Ssx5AebBUdzmn/api/docs
 ## Project Schedule
 | Date             | Deliverable      | Status      |
 | :--------------- |:-----------------| :----------:|
-| October 21       | Prep project pitch / draw wireframes / Establish API      | Incomplete      |
-| October 22       | Project Pitch / Connect API / Initial frame of app     | Incomplete      |
+| October 21       | Prep project pitch / draw wireframes / Establish API with Postman      | Complete      |
+| October 22       | Project Pitch / Connect API / Set up React App    | Incomplete      |
 | October 23–24    | Complete homepage and detail page components     | Incomplete      |
 | October 25       | Deliverable here     | Incomplete      |
 | October 26       | Deploy Project / Deliverable here     | Incomplete      |
