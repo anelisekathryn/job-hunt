@@ -111,20 +111,28 @@ API Documentation: https://airtable.com/app3Ssx5AebBUdzmn/api/docs
 | item here                        | H         | x hrs           | x hrs        |
 | item here                        | H         | x hrs           | x hrs        |
 | item here                        | H         | x hrs           | x hrs        |
-| item her                         | H         | x hrs           | x hrs        |
 | item here                        | H         | x hrs           | x hrs        |
-| item her                         | H         | x hrs           | x hrs        |
+| item here                        | H         | x hrs           | x hrs        |
+| item here                        | H         | x hrs           | x hrs        |
 | item here                        | H         | x hrs           | x hrs        |
 | item here                        | L         | x hrs           | x hrs        |
 | item here                        |           | xx hrs          | xx hrs       |
 
 ## SWOT Analysis:
 
-Strengths:
+**Strengths:**
 
-Weaknesses:
+I have a good understanding of what I want my app to look like and what I want it to do. I have a strong wireframe and plan to know what needs to be done in order to complete the MVP and post MVP goals. I have a strong understanding of the concept of react and how to organize and set up the frame of my components, routes, and links.
 
-Opportunities:
+**Weaknesses:**
 
-Threats:
+The execution of the API and actually creating the routes and links correctly can be more of a challenge for me. I understand the concept but I am often hung up on small nuances of each project that challenge my knowledge and usually necessitate additional help.
+
+**Opportunities:**
+
+There is a lot of opportunity in my Post MVP goals to learn more concepts and challenge my app to be more usable in real life. 
+
+**Threats:**
+
+Time will be a threat — it will be important to stay organized and focus on the completion of the MVP goals first and not get caught up in the desire to make everything perfect up front.
 
