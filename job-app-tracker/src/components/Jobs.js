@@ -1,13 +1,14 @@
-import axios from "axios";
+import './Jobs.css';
 import {Link} from "react-router-dom"
 
-const API_URL = ""
-
-const JobList = () => {
+const JobList = ({ job }) => {
 
   return (
-    <div>
-      <h4>Job List will be here</h4>
+    <div className="job-list">
+      <Link to={"/job/" + job.id} key={job.id}>
+        <h4>{job.fields.name}</h4>
+        <h6>{job.fields.status}</h6>
+      </Link>
     </div>
   )
 }

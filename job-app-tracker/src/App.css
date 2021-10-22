@@ -1,3 +1,20 @@
 .App {
   text-align: center;
 }
+
+nav {
+  background: #4c2853;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+}
+
+nav a {
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
