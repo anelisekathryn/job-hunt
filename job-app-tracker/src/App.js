@@ -5,6 +5,8 @@ import JobDetails from "./components/JobDetails.js"
 import axios from "axios"
 import { Route, Link } from "react-router-dom"
 import { useEffect, useState } from "react"
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const API_URL = "https://api.airtable.com/v0/app3Ssx5AebBUdzmn/Table%201?view=Grid%20view&api_key=keyJWYfYFcw6Kszue"
 

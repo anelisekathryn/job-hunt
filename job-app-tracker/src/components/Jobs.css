@@ -6,7 +6,12 @@
   width: 76%;
 } */
 
-a {
+.job-list {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.job-list a {
   text-decoration: none;
   color: black;
 }
