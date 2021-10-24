@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+/* NAV HEADER ====================================== */
+
 nav {
   background: #4c2853;
   color: white;
@@ -17,4 +19,40 @@ nav a {
   padding: 10px;
   font-size: 1.2em;
   text-decoration: none;
+}
+
+/* FOOTER ========================================= */
+
+footer {
+  background-color: #4c2853;
+  color: #ffffff;
+  /* margin: 60px 0px 0px 0px; */
+  text-align: left;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+footer a:hover {
+  color: #c2b2e1;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 90px 0px 0px 0px;
+}
+
+.left-footer {
+  text-align: left;
+  padding: 10px 0 0 15px;
+}
+
+.right-footer {
+  line-height: 1.6;
+  text-align: right;
+  padding: 10px 15px 10px 0;
 }

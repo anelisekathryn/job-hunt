@@ -10,6 +10,7 @@ const API_URL = "https://api.airtable.com/v0/app3Ssx5AebBUdzmn/Table%201?view=Gr
 
 function App() {
   const [jobs, setJobs] = useState([])
+  const [toggleFetch, setToggleFetch] = useState(true)
   
   useEffect(() => {
     console.log('getting jobs')
@@ -19,7 +20,7 @@ function App() {
       setJobs(resp.data.records);
     }
     getJobs();
-  }, [])
+  }, [toggleFetch])
 
   return (
     <div className="App">
@@ -45,7 +46,10 @@ function App() {
       </Route>
 
       <Route path="/addajob">
-        <AddJob/>
+        <AddJob
+          toggleFetch={toggleFetch}
+          setToggleFetch={setToggleFetch}
+        />
       </Route>
 
       <Route path="/job/:id">
@@ -53,7 +57,22 @@ function App() {
           jobs={jobs}
         />
       </Route>
-
+      
+      <footer>
+        <div className="footer-content">
+          <div className="left-footer">
+            <p>Site created by Anelise Kathryn</p>
+            <p>See what else I'm working on: <a href="https://github.com/anelisekathryn" target="_blank">GitHub</a></p>
+          </div>
+          <div className="right-footer">
+            <Link to="/">Home</Link>
+            <br/>
+            <Link to="/addajob">Add a Job</Link>
+            <br/>
+            <Link to="/">Archived Jobs</Link>
+          </div>
+        </div>
+      </footer>
 
     </div>
   );
