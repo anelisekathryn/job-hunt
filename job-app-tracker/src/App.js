@@ -33,13 +33,9 @@ function App() {
       </nav>
 
       <Route path="/" exact>
-        {jobs.map((job) => (
-          <div key={job.id} className="job-list">
             <JobList
-              job={job}
+              jobs={jobs}
             />
-          </div>
-        ))}
         <div className="add-button">
           <Link to="/addajob">
             Add a Job

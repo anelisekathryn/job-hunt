@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.add-button a {
+  background-color: #6c4c8b;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
 /* NAV HEADER ====================================== */
 
 nav {
@@ -11,6 +18,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 80px;
+  margin-bottom: 70px;
 }
 
 nav a {

@@ -6,7 +6,13 @@
   width: 76%;
 } */
 
+/* .job-list {
+  width: 80%;
+  margin: 0 auto;
+} */
+
 .job-list {
+  /* background-color: blueviolet; */
   width: 80%;
   margin: 0 auto;
 }
@@ -14,4 +20,25 @@
 .job-list a {
   text-decoration: none;
   color: black;
+}
+
+.job-list a:hover {
+  color: #4c2853;
+}
+
+.job-text {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: rgb(43, 226, 211); */
+  border-bottom: 1px solid black;
+}
+
+.left-text p {
+  text-align: left;
+  padding: 24px 0 10px 0;
+}
+
+.right-text p {
+  text-align: right;
+  padding: 24px 0 10px 0;
 }

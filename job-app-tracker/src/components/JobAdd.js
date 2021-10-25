@@ -47,7 +47,8 @@ const AddJob = ({toggleFetch, setToggleFetch}) => {
 
   return (
     <div>
-      <h4>Add a new job to track</h4>
+      <h4>Add a new job to track:</h4>
+      <br />
       <form onSubmit={handleSubmit} className="form-container">
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label htmlFor="name">Job Name: </Form.Label>

@@ -1,5 +1,6 @@
-import {useParams} from "react-router-dom"
-
+import { useParams } from "react-router-dom"
+import Table from 'react-bootstrap/Table'
+import './JobDetails.css';
 
 const JobDetails = ({jobs}) => {
 
@@ -9,18 +10,46 @@ const JobDetails = ({jobs}) => {
   console.log(jobInfo)
 
   return (
-    <div>
-      <h3>{jobInfo.fields.name}</h3>
+    <div className="job-container">
+      <div className="title">
+        <h3>{jobInfo.fields.name}</h3>
+      </div>
+      <div className="subtitle">
       <h4>{jobInfo.fields.company}</h4>
-      <p>{jobInfo.fields.status}</p>
-      <h4>Description:</h4>
-      <p>{jobInfo.fields.description}</p>
-      <h4>Potential Salary:</h4>
-      <p>{jobInfo.fields.salary}</p>
-      <h4>Application Link:</h4>
-      <p>{jobInfo.fields.link}</p>
-      <h4>Additional Notes:</h4>
-      <p>{jobInfo.fields.notes}</p>
+        <p>{jobInfo.fields.status}</p>
+      </div>
+      {/* <div className="details">
+        <h4>Description:</h4>
+        <p>{jobInfo.fields.description}</p>
+        <h4>Potential Salary:</h4>
+        <p>{jobInfo.fields.salary}</p>
+        <h4>Application Link:</h4>
+        <p>{jobInfo.fields.link}</p>
+        <h4>Additional Notes:</h4>
+        <p>{jobInfo.fields.notes}</p>
+      </div> */}
+      
+      <Table bordered size="md" className="table-container">
+        <tbody>
+          <tr>
+            <td className="col-1">Description:</td>
+            <td className="col-2">{jobInfo.fields.description}</td>
+          </tr>
+          <tr>
+            <td className="col-1">Potential Salary:</td>
+            <td className="col-2">{jobInfo.fields.salary}</td>
+          </tr>
+          <tr>
+            <td className="col-1">Application Link:</td>
+            <td className="col-2">{jobInfo.fields.link}</td>
+          </tr>
+          <tr>
+            <td className="col-1">Additional Notes:</td>
+            <td className="col-2">{jobInfo.fields.notes}</td>
+          </tr>
+        </tbody>
+      </Table>
+
     </div>
   )
 }
