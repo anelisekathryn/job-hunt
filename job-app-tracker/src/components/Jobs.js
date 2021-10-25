@@ -1,64 +1,47 @@
 import './Jobs.css';
-// import Table from 'react-bootstrap/Table'
-// import ListGroup from 'react-bootstrap/ListGroup'
 import { Link } from "react-router-dom"
+// import { useState } from "react"
+// import DropdownButton from 'react-bootstrap/DropdownButton';
+// import Dropdown from 'react-bootstrap/Dropdown'
+
 
 const JobList = ({ jobs }) => {
 
+  // const [status, setStatus] = useState('');
+
+  // const handleSelect = (e) => {
+  //   console.log(e)
+  //   setStatus(e)
+  // }
+
   return (
     <div className="job-list">
-
-      {/* <Link to={"/job/" + job.id} key={job.id}>
-        <h4>{job.fields.name}</h4>
-        <h6>{job.fields.status}</h6>
-      </Link> */}
-
-      {/* <Table striped bordered hover size="md">
-        <tbody>
-          <tr>
-          {jobs.map((job) => (
-            <div key={job.id} className="job-list">
-            <Link to={"/job/" + job.id} key={job.id}>
-              <td>{job.fields.name}</td>
-              <td>{job.fields.status}</td>
-              </Link>
-            </div>
-            ))}
-          </tr>
-        </tbody>
-      </Table>
-
-      <ListGroup>
-        <ListGroup.Item
-          as="li"
-          className="d-flex justify-content-between align-items-start"
-        >
-          {jobs.map((job) => (
-            <div key={job.id} className="job-list">
-            <Link to={"/job/" + job.id} key={job.id}>
-              <div className="fw-bold">{job.fields.name}</div>
-              <div className="fw-bold">{job.fields.status}</div>
-            </Link>
-            </div>
-            ))}
-
-          <div className="fw-bold">Subheading</div>
-
-        </ListGroup.Item>
-      </ListGroup> */}
-
       {jobs.map((job) => (
         <div key={job.id} className="job-list">
-          <Link to={"/job/" + job.id} key={job.id}>
-            <div className="job-text">
+          <div className="job-text">
+            <Link to={"/job/" + job.id} key={job.id}>
               <div className="left-text">
                 <p>{job.fields.name}</p>
               </div>
+            </Link>    
               <div className="right-text">
                 <p>{job.fields.status}</p>
+                
+                {/* <DropdownButton
+                  title={job.fields.status}
+                  id="dropdown-menu"
+                  onSelect={handleSelect}
+                >
+                  <Dropdown.Item eventKey="Application In Progress">Application In Progress</Dropdown.Item>
+                  <Dropdown.Item eventKey="Application Submitted">Application Submitted</Dropdown.Item>
+                  <Dropdown.Item eventKey="Interviewing">Interviewing</Dropdown.Item>
+                  <Dropdown.Item eventKey="Final Interview">Final Interview</Dropdown.Item>
+                  <Dropdown.Item eventKey="Offer Accepted">Offer Accepted</Dropdown.Item>
+                  <Dropdown.Item eventKey="Archived">Archived</Dropdown.Item>
+                </DropdownButton> */}
+
               </div>
             </div>
-          </Link>
         </div>
       ))}
 

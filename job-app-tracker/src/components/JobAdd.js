@@ -81,12 +81,12 @@ const AddJob = ({toggleFetch, setToggleFetch}) => {
             id="dropdown-menu"
             onSelect={handleSelect}
           >
-              <Dropdown.Item eventKey="Application In Progress">Application In Progress</Dropdown.Item>
-              <Dropdown.Item eventKey="Application Submitted">Application Submitted</Dropdown.Item>
-              <Dropdown.Item eventKey="Interviewing">Interviewing</Dropdown.Item>
-              <Dropdown.Item eventKey="Final Interview">Final Interview</Dropdown.Item>
-              <Dropdown.Item eventKey="Offer Accepted">Offer Accepted</Dropdown.Item>
-              <Dropdown.Item eventKey="Archived">Archived</Dropdown.Item>
+            <Dropdown.Item eventKey="Application In Progress">Application In Progress</Dropdown.Item>
+            <Dropdown.Item eventKey="Application Submitted">Application Submitted</Dropdown.Item>
+            <Dropdown.Item eventKey="Interviewing">Interviewing</Dropdown.Item>
+            <Dropdown.Item eventKey="Final Interview">Final Interview</Dropdown.Item>
+            <Dropdown.Item eventKey="Offer Accepted">Offer Accepted</Dropdown.Item>
+            <Dropdown.Item eventKey="Archived">Archived</Dropdown.Item>
           </DropdownButton>
           <br />
           <Form.Label htmlFor="description">Job Description: </Form.Label>
