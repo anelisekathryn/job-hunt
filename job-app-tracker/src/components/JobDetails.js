@@ -18,18 +18,8 @@ const JobDetails = ({jobs}) => {
       <h4>{jobInfo.fields.company}</h4>
         <p>{jobInfo.fields.status}</p>
       </div>
-      {/* <div className="details">
-        <h4>Description:</h4>
-        <p>{jobInfo.fields.description}</p>
-        <h4>Potential Salary:</h4>
-        <p>{jobInfo.fields.salary}</p>
-        <h4>Application Link:</h4>
-        <p>{jobInfo.fields.link}</p>
-        <h4>Additional Notes:</h4>
-        <p>{jobInfo.fields.notes}</p>
-      </div> */}
-      
-      <Table bordered size="md" className="table-container">
+
+      <Table size="md" className="table-container">
         <tbody>
           <tr>
             <td className="col-1">Description:</td>

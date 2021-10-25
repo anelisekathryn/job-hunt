@@ -1,12 +1,13 @@
 import './Jobs.css';
-import Table from 'react-bootstrap/Table'
-import ListGroup from 'react-bootstrap/ListGroup'
+// import Table from 'react-bootstrap/Table'
+// import ListGroup from 'react-bootstrap/ListGroup'
 import { Link } from "react-router-dom"
 
 const JobList = ({ jobs }) => {
 
   return (
     <div className="job-list">
+
       {/* <Link to={"/job/" + job.id} key={job.id}>
         <h4>{job.fields.name}</h4>
         <h6>{job.fields.status}</h6>
@@ -45,6 +46,7 @@ const JobList = ({ jobs }) => {
 
         </ListGroup.Item>
       </ListGroup> */}
+
       {jobs.map((job) => (
         <div key={job.id} className="job-list">
           <Link to={"/job/" + job.id} key={job.id}>

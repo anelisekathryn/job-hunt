@@ -60,7 +60,7 @@ function App() {
         <div className="footer-content">
           <div className="left-footer">
             <p>Site created by Anelise Kathryn</p>
-            <p>See what else I'm working on: <a href="https://github.com/anelisekathryn" target="_blank">GitHub</a></p>
+            <p>See what else I'm working on: <a href="https://github.com/anelisekathryn" target="_blank" rel="noreferrer">GitHub</a></p>
           </div>
           <div className="right-footer">
             <Link to="/">Home</Link>

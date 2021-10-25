@@ -3,8 +3,21 @@
   margin: 0 auto;
 }
 
-table td {
-  border: 10px orange;
+.title {
+  background-color: #4c2853;
+  color: white;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.subtitle {
+  padding: 15px;
+  line-height: 2.6;
+}
+
+table {
+  border: 30px;
+  /* background-color: magenta; */
 }
 
 .table-container {
