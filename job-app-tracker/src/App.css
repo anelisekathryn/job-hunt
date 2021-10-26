@@ -12,6 +12,10 @@
   text-decoration: none;
   padding: 10px;
 }
+.add-button a:hover {
+  background-color: #9448bc;
+  color: white;
+}
 
 /* NAV HEADER ====================================== */
 
@@ -33,6 +37,10 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  color: white;
+}
+
 /* FOOTER ========================================= */
 
 footer {
@@ -49,28 +57,47 @@ footer a {
 }
 
 footer a:hover {
-  color: #c2b2e1;
+  color: #9448bc;
 }
+
+.footer-content {
+  margin: 90px 0px 0px 0px;
+}
+
+.right-footer {
+  text-align: center;
+  line-height: 0.5;
+  padding: 25px 0 10px 15px;
+  font-size: 12px;
+}
+
+.left-footer {
+  text-align: center;
+
+  line-height: 1.6;
+  padding: 10px 15px 0px 15px;
+}
+
+/* FOOTER -> DESKTOP ================================ */
 
 @media (min-width: 470px) {
   .footer-content {
     display: flex;
     justify-content: space-between;
-    margin: 90px 0px 0px 0px;
+  }
+}
+
+@media (min-width: 470px) {
+  .right-footer {
+    text-align: right;
+    padding: 22px 15px 10px 0;
+    font-size: 14px;
   }
 }
 
 @media (min-width: 470px) {
   .left-footer {
     text-align: left;
-    padding: 10px 0 0 15px;
-  }
-}
-
-@media (min-width: 470px) {
-  .right-footer {
-    line-height: 1.6;
-    text-align: right;
-    padding: 10px 15px 10px 0;
+    padding: 10px 0 10px 15px;
   }
 }

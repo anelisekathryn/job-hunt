@@ -59,15 +59,16 @@ function App() {
       <footer>
         <div className="footer-content">
           <div className="left-footer">
-            <p>Site created by Anelise Kathryn</p>
-            <p>See what else I'm working on: <a href="https://github.com/anelisekathryn" target="_blank" rel="noreferrer">GitHub</a></p>
-          </div>
-          <div className="right-footer">
             <Link to="/">Home</Link>
             <br/>
             <Link to="/addajob">Add a Job</Link>
             <br/>
             <Link to="/">Archived Jobs</Link>
+          </div>
+          <div className="right-footer">
+            <p>Site created by Anelise Kathryn</p>
+            <p>See what else I'm working on: <a href="https://github.com/anelisekathryn" target="_blank" rel="noreferrer">GitHub</a></p>
+            <p>Inspirational quotes provided by <a href="https://zenquotes.io/" target="_blank">ZenQuotes API</a></p>
           </div>
         </div>
       </footer>
