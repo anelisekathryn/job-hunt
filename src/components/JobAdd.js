@@ -6,7 +6,7 @@ import Form from 'react-bootstrap/Form'
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown'
 
-const API_URL = "https://api.airtable.com/v0/app3Ssx5AebBUdzmn/Table%201?api_key=keyJWYfYFcw6Kszue"
+const API_URL = `https://api.airtable.com/v0/app3Ssx5AebBUdzmn/Table%201?view=Grid%20view&api_key=${process.env.REACT_APP_API_KEY}`
 
 const AddJob = ({toggleFetch, setToggleFetch}) => {
 
