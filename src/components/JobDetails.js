@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom"
 import Table from 'react-bootstrap/Table'
 import './JobDetails.css';
-import { Route, Link } from "react-router-dom"
-import JobEdit from "./JobEdit.js"
+// import { Route, Link } from "react-router-dom"
+// import JobEdit from "./JobEdit.js"
 
 
 const JobDetails = ({jobs}) => {
@@ -43,7 +43,7 @@ const JobDetails = ({jobs}) => {
         </tbody>
       </Table>
 
-      <div>
+      {/* <div>
         <Link to="/edit/:id">Edit</Link>
       </div>
 
@@ -51,7 +51,7 @@ const JobDetails = ({jobs}) => {
         <JobEdit
           
         />
-      </Route>
+      </Route> */}
 
     </div>
   )
