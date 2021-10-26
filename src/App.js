@@ -29,7 +29,12 @@ function App() {
   return (
     <div className="App">
 
-      <nav>
+      <nav className="desk-nav">
+        <Link to="/">Home</Link>
+        <Link to="/addajob">Add a Job</Link>
+      </nav>
+
+      <nav className="mobile-nav">
         <Link to="/">Home</Link>
         <Link to="/addajob">Add a Job</Link>
       </nav>
