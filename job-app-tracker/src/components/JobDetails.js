@@ -25,20 +25,20 @@ const JobDetails = ({jobs}) => {
       <Table size="md" className="table-container">
         <tbody>
           <tr>
-            <td className="col-1">Description:</td>
-            <td className="col-2">{jobInfo.fields.description}</td>
+            <th className="col-2">Description: </th>
+            <td className="col-10">{jobInfo.fields.description}</td>
           </tr>
           <tr>
-            <td className="col-1">Potential Salary:</td>
-            <td className="col-2">{jobInfo.fields.salary}</td>
+            <th className="col-2">Salary: </th>
+            <td className="col-10">{jobInfo.fields.salary}</td>
           </tr>
           <tr>
-            <td className="col-1">Application Link:</td>
-            <td className="col-2">{jobInfo.fields.link}</td>
+            <th className="col-2">Job Link: </th>
+            <td className="col-10">{jobInfo.fields.link}</td>
           </tr>
           <tr>
-            <td className="col-1">Additional Notes:</td>
-            <td className="col-2">{jobInfo.fields.notes}</td>
+            <th className="col-2">Notes: </th>
+            <td className="col-10">{jobInfo.fields.notes}</td>
           </tr>
         </tbody>
       </Table>

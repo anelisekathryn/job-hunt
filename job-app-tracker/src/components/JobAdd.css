@@ -3,6 +3,7 @@
   margin: 0 auto;
 }
 
-.mb-3 {
-  border-color: mediumblue;
+#dropdown-menu {
+  background-color: #6c4c8b;
+  border-color: #6c4c8b;
 }
