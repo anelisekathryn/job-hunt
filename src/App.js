@@ -5,6 +5,7 @@ import JobDetails from "./components/JobDetails.js"
 import axios from "axios"
 import { Route, Link } from "react-router-dom"
 import { useEffect, useState } from "react"
+import { slide as Menu } from "react-burger-menu"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -26,6 +27,10 @@ function App() {
     getJobs();
   }, [toggleFetch])
 
+  // const showSettings = (ev) => {
+  //   ev.preventDefault();
+  // }
+
   return (
     <div className="App">
 
@@ -35,8 +40,12 @@ function App() {
       </nav>
 
       <nav className="mobile-nav">
-        <Link to="/">Home</Link>
-        <Link to="/addajob">Add a Job</Link>
+        <Menu>
+          <a id="home" className="menu-item" href="/">Home</a>
+          <a id="addajob" className="menu-item" href="/addajob">Add a Job</a>
+          <a id="contact" className="menu-item" href="/">Contact</a>
+          {/* <a onClick={ showSettings } className="menu-item--small" href="">Settings</a> */}
+        </Menu>
       </nav>
 
       <Route path="/" exact>
