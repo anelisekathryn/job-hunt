@@ -14,6 +14,16 @@ const JobList = ({ jobs }) => {
   //   setStatus(e)
   // }
 
+  const changeStatusColor = () => {
+    let color;
+    if (jobs.fields.status === 'Interviewing') {
+      color = 'green';
+    } else {
+      color = 'white';
+    }
+    return color;
+  }
+
   return (
     <div className="job-list">
       {jobs.map((job) => (
@@ -24,7 +34,12 @@ const JobList = ({ jobs }) => {
                 <p>{job.fields.name}</p>
               </div>
             </Link>    
-              <div className="right-text">
+            <div
+              className="right-text"
+              style={{
+                backgroundColor: {changeStatusColor}
+              }}
+            >
                 <p>{job.fields.status}</p>
                 
                 {/* <DropdownButton

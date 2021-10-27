@@ -1,29 +1,31 @@
-import axios from "axios";
+import quotes from '../quotes.json'
+// import axios from "axios";
 import { useEffect, useState } from "react"
 
-const quotes_url = "https://zenquotes.io/api/random";
+// const quotes_url = "https://zenquotes.io/api/random";
 
 const Quotes = () => {
 
-  const [quotes, setQuotes] = useState('')
+  const [quote, setQuote] = useState({})
 
-  const fetchQuotes = async () => {
-    const res = await axios.get(quotes_url);
-    console.log(res)
-    setQuotes(res.data)
-  }
+  // const fetchQuotes = async () => {
+  //   const res = await axios.get(quotes_url);
+  //   console.log(res)
+  //   setQuotes(res.data)
+  // }
+
 
   useEffect(() => {
-    fetchQuotes()
+
+    let i = Math.floor(Math.random() * quotes.length);
+
+    setQuote(quotes[i])
   }, [])
 
   return (
-    <div>
-      <em>quote will be here</em>
-      
-      <em>{quotes.q}</em>
-      <p>{quotes.a}</p>
-
+    <div>      
+      <em>{quote.q}</em>
+      <p>{quote.a}</p>
     </div>
   )
 }

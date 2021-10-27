@@ -129,22 +129,8 @@
 
 /* RESOURCE LINKS ==================================== */
 
-.link-container a {
-  display: flex;
-  justify-content: space-between;
-}
-
-.link-container a {
-  background-color: #6c4c8b;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  margin: 10px;
-}
-
-.link-container a:hover {
-  background-color: #9448bc;
-  color: white;
+.resource-links {
+  margin: 30px 0 20px 0;
 }
 
 /* FOOTER =========================================== */

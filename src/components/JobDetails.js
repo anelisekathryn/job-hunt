@@ -20,34 +20,34 @@ const JobDetails = ({jobs}) => {
       <h4>{jobInfo.fields.company}</h4>
         <p>{jobInfo.fields.status}</p>
       </div>
-
-      <Table size="md" className="table-container">
-        <tbody>
-          <tr>
-            <th className="col-2">Description: </th>
-            <td className="col-10">{jobInfo.fields.description}</td>
-          </tr>
-          <tr>
-            <th className="col-2">Salary: </th>
-            <td className="col-10">{jobInfo.fields.salary}</td>
-          </tr>
-          <tr>
-            <th className="col-2">Job Link: </th>
-            <td className="col-10">{jobInfo.fields.link}</td>
-          </tr>
-          <tr>
-            <th className="col-2">Notes: </th>
-            <td className="col-10">
-              {jobInfo.fields.notes.split("\n").map((textLine) => (
-                <p className="notes-text" key={textLine}>
-                  {textLine}
-                </p>
-              ))}
-            </td>
-          </tr>
-        </tbody>
-      </Table>
-
+      <div className="table-container">
+        <Table size="md">
+          <tbody>
+            <tr>
+              <th className="col-2">Description: </th>
+              <td className="col-10">{jobInfo.fields.description}</td>
+            </tr>
+            <tr>
+              <th className="col-2">Salary: </th>
+              <td className="col-10">{jobInfo.fields.salary}</td>
+            </tr>
+            <tr>
+              <th className="col-2">Job Link: </th>
+              <td className="col-10">{jobInfo.fields.link}</td>
+            </tr>
+            <tr>
+              <th className="col-2">Notes: </th>
+              <td className="col-10">
+                {jobInfo.fields.notes.split("\n").map((textLine) => (
+                  <p className="notes-text" key={textLine}>
+                    {textLine}
+                  </p>
+                ))}
+              </td>
+            </tr>
+          </tbody>
+        </Table>
+      </div>
       <div>
         <Link to={`/edit/${id}`}>Edit</Link>
       </div>

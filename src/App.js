@@ -62,8 +62,7 @@ function App() {
           <Quotes
           />
         </div>
-        <div className="link-container">
-          <br />
+        <div className="resource-links">
           <ResourceLinks
           />
         </div>
