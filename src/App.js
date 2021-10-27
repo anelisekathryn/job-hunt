@@ -2,6 +2,7 @@ import './App.css';
 import JobList from "./components/Jobs.js"
 import AddJob from "./components/JobAdd.js"
 import JobDetails from "./components/JobDetails.js"
+import JobEdit from "./components/JobEdit.js"
 import axios from "axios"
 import { Route, Link } from "react-router-dom"
 import { useEffect, useState } from "react"
@@ -63,6 +64,12 @@ function App() {
 
       <Route path="/job/:id">
         <JobDetails
+          jobs={jobs}
+        />
+      </Route>
+
+      <Route path="/edit/:id">
+        <JobEdit
           jobs={jobs}
         />
       </Route>

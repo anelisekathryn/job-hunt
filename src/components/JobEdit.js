@@ -5,22 +5,37 @@ import Form from 'react-bootstrap/Form'
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown'
 
-const JobEdit = () => {
+const JobEdit = ({ jobs }) => {
+  
+  const { id } = useParams();
 
-  const [name, setName] = useState('');
-  const [company, setCompany] = useState('');
-  const [status, setStatus] = useState('Select a Status');
-  const [description, setDescription] = useState('');
-  const [salary, setSalary] = useState('');
-  const [link, setLink] = useState('');
-  const [notes, setNotes] = useState('');
-  const params = useParams();
-  const [redirectHome, setRedirectHome] = useState(false)
+  const jobInfo = jobs.find((jobInfo) => jobInfo.id === id);
+  console.log(jobInfo)
+
+  const [name, setName] = useState(jobInfo.fields.name);
+  const [company, setCompany] = useState(jobInfo.fields.company);
+  const [status, setStatus] = useState(jobInfo.fields.status);
+  const [description, setDescription] = useState(jobInfo.fields.description);
+  const [salary, setSalary] = useState(jobInfo.fields.salary);
+  const [link, setLink] = useState(jobInfo.fields.link);
+  const [notes, setNotes] = useState(jobInfo.fields.notes);
+  // const params = useParams();
+  // const [redirectHome, setRedirectHome] = useState(false)
+  
 
   const handleEdit = (ev) => {
     ev.preventDefault(ev);
     console.log('edit submitted')
 
+    
+
+    // const EDIT_URL = `https://api.airtable.com/v0/app3Ssx5AebBUdzmn/Table%201?view=Grid%20view&api_key=${process.env.REACT_APP_API_KEY}`
+
+    // await.axios.put(EDIT_URL, )
+
+    // useEffect(() => {
+      
+    // })
 
   }
 
@@ -31,7 +46,6 @@ const JobEdit = () => {
 
   return (
     <div>
-      <h2>edit form will go here</h2>
       <form onSubmit={handleEdit} className="form-container">
         <Form.Group className="mb-3">
           <Form.Label htmlFor="name">Job Name: </Form.Label>
