@@ -3,6 +3,7 @@ import JobList from "./components/Jobs.js"
 import AddJob from "./components/JobAdd.js"
 import JobDetails from "./components/JobDetails.js"
 import JobEdit from "./components/JobEdit.js"
+import Quotes from "./components/Quotes.js"
 import axios from "axios"
 import { Route, Link } from "react-router-dom"
 import { useEffect, useState } from "react"
@@ -36,8 +37,8 @@ function App() {
         <Link to="/addajob">Add a Job</Link>
       </nav>
 
-      {/* CITATION: https://www.npmjs.com/package/react-burger-menu */}
       <nav className="mobile-nav">
+      {/* CITATION: https://www.npmjs.com/package/react-burger-menu */}
         <Menu>
           <a id="home" className="menu-item" href="/">Home</a>
           <a id="addajob" className="menu-item" href="/addajob">Add a Job</a>
@@ -46,13 +47,19 @@ function App() {
       </nav>
 
       <Route path="/" exact>
+        <div>
             <JobList
               jobs={jobs}
             />
+        </div>    
         <div className="add-button">
           <Link to="/addajob">
             Add a Job
           </Link>
+        </div>
+        <div className="quote-container">
+          <Quotes
+          />
         </div>
       </Route>
 
