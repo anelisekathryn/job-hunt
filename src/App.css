@@ -160,6 +160,7 @@ footer a:hover {
 .bm-cross-button {
   height: 24px;
   width: 24px;
+  left: 165px;
 }
 
 .bm-cross {
@@ -171,7 +172,6 @@ footer a:hover {
   height: 100%;
 }
 
-/* General sidebar styles */
 .bm-menu {
   background: #c2b2e1;
   padding: 2em 1em 0;
