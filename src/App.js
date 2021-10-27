@@ -27,10 +27,6 @@ function App() {
     getJobs();
   }, [toggleFetch])
 
-  // const showSettings = (ev) => {
-  //   ev.preventDefault();
-  // }
-
   return (
     <div className="App">
 
@@ -39,12 +35,12 @@ function App() {
         <Link to="/addajob">Add a Job</Link>
       </nav>
 
+      {/* CITATION: https://www.npmjs.com/package/react-burger-menu */}
       <nav className="mobile-nav">
         <Menu>
           <a id="home" className="menu-item" href="/">Home</a>
           <a id="addajob" className="menu-item" href="/addajob">Add a Job</a>
           <a id="contact" className="menu-item" href="/">Contact</a>
-          {/* <a onClick={ showSettings } className="menu-item--small" href="">Settings</a> */}
         </Menu>
       </nav>
 

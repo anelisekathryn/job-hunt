@@ -59,7 +59,7 @@
 
 @media (max-width: 470px) {
   .mobile-nav {
-    background: #29dc23;
+    background: #4c2853;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -141,3 +141,61 @@ footer a:hover {
     padding: 10px 0 10px 15px;
   }
 }
+
+/* HAMBURGER MENU ================================ */
+/* CITATION: style code starteed from https://github.com/negomi/react-burger-menu#styling */
+
+.bm-burger-button {
+  position: fixed;
+  width: 22px;
+  height: 20px;
+  left: 22px;
+  top: 22px;
+}
+
+.bm-burger-bars {
+  background: white;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: white;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #c2b2e1;
+  padding: 2em 1em 0;
+  font-size: 1em;
+  width: 200px;
+}
+
+/* Morph shape necessary with bubble or elastic */
+/* .bm-morph-shape {
+  fill: #373a47;
+} */
+
+/* Wrapper for item list */
+/* .bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+} */
+
+/* Individual item */
+/* .bm-item {
+  display: inline-block;
+} */
+
+/* Styling of overlay */
+/* .bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+} */
