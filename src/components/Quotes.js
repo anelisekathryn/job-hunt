@@ -1,16 +1,28 @@
+import axios from "axios";
 import { useEffect, useState } from "react"
 
-const quotes_url = "https://zenquotes.io/api/quotes/[random]";
+const quotes_url = "https://zenquotes.io/api/random";
 
 const Quotes = () => {
 
-  cosnt [quotes, setQuotes] = useState('')
+  const [quotes, setQuotes] = useState('')
+
+  const fetchQuotes = async () => {
+    const res = await axios.get(quotes_url);
+    console.log(res)
+    setQuotes(res.data)
+  }
+
+  useEffect(() => {
+    fetchQuotes()
+  }, [])
 
   return (
     <div>
-      <h2>quote box will go here</h2>
+      <em>quote will be here</em>
       
-      
+      <em>{quotes.q}</em>
+      <p>{quotes.a}</p>
 
     </div>
   )

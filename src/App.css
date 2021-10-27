@@ -81,7 +81,73 @@
   }
 }
 
-/* FOOTER ========================================= */
+/* HAMBURGER MENU ================================ */
+/* CITATION: style code starteed from https://github.com/negomi/react-burger-menu#styling */
+
+.bm-burger-button {
+  position: fixed;
+  width: 22px;
+  height: 20px;
+  left: 22px;
+  top: 22px;
+}
+
+.bm-burger-bars {
+  background: white;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  left: 165px;
+}
+
+.bm-cross {
+  background: white;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+.bm-menu {
+  background: #c2b2e1;
+  padding: 2em 1em 0;
+  font-size: 1em;
+  width: 200px;
+}
+
+/* QUOTE BOX ======================================== */
+
+.quote-container {
+  background-color: #c2b2e1;
+  width: 65%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* RESOURCE LINKS ==================================== */
+
+.link-container a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-container a {
+  background-color: #6c4c8b;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+.link-container a:hover {
+  background-color: #9448bc;
+  color: white;
+}
+
+/* FOOTER =========================================== */
 
 footer {
   background-color: #4c2853;
@@ -141,61 +207,3 @@ footer a:hover {
     padding: 10px 0 10px 15px;
   }
 }
-
-/* HAMBURGER MENU ================================ */
-/* CITATION: style code starteed from https://github.com/negomi/react-burger-menu#styling */
-
-.bm-burger-button {
-  position: fixed;
-  width: 22px;
-  height: 20px;
-  left: 22px;
-  top: 22px;
-}
-
-.bm-burger-bars {
-  background: white;
-}
-
-.bm-cross-button {
-  height: 24px;
-  width: 24px;
-  left: 165px;
-}
-
-.bm-cross {
-  background: white;
-}
-
-.bm-menu-wrap {
-  position: fixed;
-  height: 100%;
-}
-
-.bm-menu {
-  background: #c2b2e1;
-  padding: 2em 1em 0;
-  font-size: 1em;
-  width: 200px;
-}
-
-/* Morph shape necessary with bubble or elastic */
-/* .bm-morph-shape {
-  fill: #373a47;
-} */
-
-/* Wrapper for item list */
-/* .bm-item-list {
-  color: #b8b7ad;
-  padding: 0.8em;
-} */
-
-/* Individual item */
-/* .bm-item {
-  display: inline-block;
-} */
-
-/* Styling of overlay */
-/* .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
-} */

@@ -4,6 +4,7 @@ import AddJob from "./components/JobAdd.js"
 import JobDetails from "./components/JobDetails.js"
 import JobEdit from "./components/JobEdit.js"
 import Quotes from "./components/Quotes.js"
+import ResourceLinks from "./components/ResourceLinks.js"
 import axios from "axios"
 import { Route, Link } from "react-router-dom"
 import { useEffect, useState } from "react"
@@ -59,6 +60,11 @@ function App() {
         </div>
         <div className="quote-container">
           <Quotes
+          />
+        </div>
+        <div className="link-container">
+          <br />
+          <ResourceLinks
           />
         </div>
       </Route>
