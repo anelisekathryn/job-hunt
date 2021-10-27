@@ -1,16 +1,18 @@
 import axios from 'axios';
-import { useState, useEffect } from "react"
+import {Redirect} from "react-router-dom"
+import { useState } from "react"
 import { useParams } from "react-router-dom"
 import Form from 'react-bootstrap/Form'
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown'
 
-const JobEdit = ({ jobs }) => {
+const EDIT_URL = `https://api.airtable.com/v0/app3Ssx5AebBUdzmn/Table%201?view=Grid%20view&api_key=${process.env.REACT_APP_API_KEY}`
+
+const JobEdit = ({ jobs, toggleFetch, setToggleFetch }) => {
   
   const { id } = useParams();
 
   const jobInfo = jobs.find((jobInfo) => jobInfo.id === id);
-  console.log(jobInfo)
 
   const [name, setName] = useState(jobInfo.fields.name);
   const [company, setCompany] = useState(jobInfo.fields.company);
@@ -20,23 +22,39 @@ const JobEdit = ({ jobs }) => {
   const [link, setLink] = useState(jobInfo.fields.link);
   const [notes, setNotes] = useState(jobInfo.fields.notes);
   // const params = useParams();
-  // const [redirectHome, setRedirectHome] = useState(false)
+  const [redirectHome, setRedirectHome] = useState(false)
   
 
-  const handleEdit = (ev) => {
+  const handleEdit = async (ev) => {
     ev.preventDefault(ev);
     console.log('edit submitted')
 
-    
+    const editJob = {
+      records: [
+        {
+          id,
+          fields: {
+            name,
+            company,
+            status,
+            description,
+            salary,
+            link,
+            notes
+          }
+        }
+      ]
+    }
 
-    // const EDIT_URL = `https://api.airtable.com/v0/app3Ssx5AebBUdzmn/Table%201?view=Grid%20view&api_key=${process.env.REACT_APP_API_KEY}`
+    await axios.put(EDIT_URL, editJob)
+    setRedirectHome(true);
+    setToggleFetch(!toggleFetch);
 
-    // await.axios.put(EDIT_URL, )
+  }
 
-    // useEffect(() => {
-      
-    // })
-
+  if (redirectHome) {
+    // return <Redirect to={`/edit/rec${id}`}/>
+    return <Redirect to="/"/>
   }
 
   const handleSelect = (e) => {

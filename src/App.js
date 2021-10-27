@@ -71,6 +71,8 @@ function App() {
       <Route path="/edit/:id">
         <JobEdit
           jobs={jobs}
+          toggleFetch={toggleFetch}
+          setToggleFetch={setToggleFetch}
         />
       </Route>
       
