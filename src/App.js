@@ -41,6 +41,7 @@ function App() {
         <Menu>
           <a id="home" className="menu-item" href="/">Home</a>
           <a id="addajob" className="menu-item" href="/addajob">Add a Job</a>
+          <a id="archivedjobs" className="menu-item" href="/">Archived Jobs</a>
         </Menu>
       </nav>
 
