@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import Table from 'react-bootstrap/Table'
 import './JobDetails.css';
-import { Route, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
 const JobDetails = ({jobs}) => {
