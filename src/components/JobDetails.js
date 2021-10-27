@@ -37,9 +37,11 @@ const JobDetails = ({jobs}) => {
           </tr>
           <tr>
             <th className="col-2">Notes: </th>
-            <td className="col-10" key={jobInfo.fields.notes.id}>
-              {jobInfo.fields.notes.split('\n').map((textLine) => (
-              <p>{textLine}</p>
+            <td className="col-10">
+              {jobInfo.fields.notes.split("\n").map((textLine) => (
+                <p className="notes-text" key={textLine}>
+                  {textLine}
+                </p>
               ))}
             </td>
           </tr>
