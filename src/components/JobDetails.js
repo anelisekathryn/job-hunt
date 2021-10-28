@@ -44,6 +44,14 @@ const JobDetails = ({jobs}) => {
         <h4>{jobInfo.fields.company}</h4>
         <p className="detail-status" style={{ backgroundColor: color }} >{jobInfo.fields.status}</p>
       </div>
+
+      <div className="edit-button">
+        <Link to={`/edit/${id}`}>
+          <img src="https://i.imgur.com/5eNqsk7.png" alt="edit"/>
+        </Link>
+      </div>
+
+
       <div className="table-container">
         <Table size="md">
           <tbody>
@@ -57,7 +65,7 @@ const JobDetails = ({jobs}) => {
             </tr>
             <tr>
               <th className="col-2">Job Link: </th>
-              <td className="col-10">{jobInfo.fields.link}</td>
+              <td className="col-10"><a href={jobInfo.fields.link} target="_blank" rel="noreferrer">{jobInfo.fields.link}</a></td>
             </tr>
             <tr>
               <th className="col-2">Notes: </th>
@@ -72,8 +80,20 @@ const JobDetails = ({jobs}) => {
           </tbody>
         </Table>
       </div>
-      <div>
-        <Link to={`/edit/${id}`}>Edit</Link>
+
+      <div className="mobile-container">
+        <h5>Description:</h5>
+        <p>{jobInfo.fields.description}</p>
+        <h5>Salary:</h5>
+        <p>{jobInfo.fields.salary}</p>
+        <h5>Job Link:</h5>
+        <p><a href={jobInfo.fields.link} target="_blank" rel="noreferrer">{jobInfo.fields.link}</a></p>
+        <h5>Notes:</h5>
+        {jobInfo.fields.notes.split("\n").map((textLine) => (
+          <p className="notes-text" key={textLine}>
+            {textLine}
+          </p>
+        ))}
       </div>
 
     </div>

@@ -19,12 +19,42 @@
 }
 
 .subtitle {
-  padding: 15px 0 0 0;
+  padding: 15px 0 10px 0;
   line-height: 2.6;
 }
 
 .subtitle h4 {
   text-transform: none;
+}
+
+.edit-button img {
+  width: 3vw;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 559px) {
+  .mobile-container {
+    display: none;
+  }
+}
+
+.detail-status {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 14px;
+  width: 28vw;
+  border-radius: 6px;
+  height: 5vh;
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 4.5vh;
+}
+
+@media (max-width: 590px) {
+  .detail-status {
+    width: 100%;
+  }
 }
 
 .table-container {
@@ -33,13 +63,56 @@
 }
 
 .table-md tr {
-  border-bottom: 15px solid white;
+  border-bottom: 1px solid black;
 }
 
 .col-2 {
   text-align: right;
+  font-weight: 700;
+  font-size: 17px;
 }
 
 .col-10 {
   text-align: left;
+  font-weight: 400;
+}
+
+.col-10 a {
+  text-decoration: none;
+  color: black;
+}
+
+.col-10 a:hover {
+  text-decoration: none;
+  color: #9448bc;
+}
+
+/* DETAIL --> MOBILE VIEW ================================= */
+
+@media (max-width: 560px) {
+  .table-container {
+    display: none;
+  }
+
+  .mobile-container h5 {
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  .mobile-container p {
+    font-weight: 400;
+    line-height: 3.2vh;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+  }
+
+  .mobile-container a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .mobile-container a:hover {
+    text-decoration: none;
+    color: #9448bc;
+  }
 }
