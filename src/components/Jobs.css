@@ -12,7 +12,6 @@
 } */
 
 .job-list {
-  /* background-color: blueviolet; */
   width: 80%;
   margin: 0 auto;
 }
@@ -38,7 +37,12 @@
   padding: 24px 0 10px 0;
 }
 
+.right-text {
+  margin: 18px 0 18px 0;
+  width: 24vw;
+  border-radius: 6px;
+}
+
 .right-text p {
-  text-align: right;
-  padding: 24px 0 10px 0;
+  text-align: center;
 }
