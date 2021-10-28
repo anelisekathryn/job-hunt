@@ -1,11 +1,18 @@
 .form-container {
-  width: 60%;
+  width: 65%;
   margin: 0 auto;
+}
+
+@media (max-width: 650px) {
+  .form-container {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .mb-3 {
   background-color: #eeeeee;
-  padding: 20px 25px 20px 25px;
+  padding: 20px 25px 30px 25px;
 }
 
 #dropdown-menu {
@@ -30,9 +37,4 @@ input {
   text-decoration: none;
   padding: 10px 18px 10px 18px;
   font-weight: 500;
-}
-
-input:hover {
-  background-color: #9448bc;
-  color: white;
 }

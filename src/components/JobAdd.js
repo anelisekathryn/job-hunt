@@ -125,7 +125,7 @@ const AddJob = ({ toggleFetch, setToggleFetch }) => {
             onChange={(ev) => setNotes(ev.target.value)}
           />
           <br />
-          <input type="submit"></input>
+          <input className="submit-button" type="submit"></input>
         </Form.Group>
       </form>
 

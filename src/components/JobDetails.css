@@ -7,12 +7,24 @@
   background-color: #4c2853;
   color: white;
   margin: 0 auto;
-  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: -10px;
+  padding: 14px;
+}
+
+.title h3 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .subtitle {
   padding: 15px 0 0 0;
   line-height: 2.6;
+}
+
+.subtitle h4 {
+  text-transform: none;
 }
 
 .table-container {
