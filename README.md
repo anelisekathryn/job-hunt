@@ -10,7 +10,6 @@ This app is designed to organize of all those job applications when you're on th
 
 ![image](https://user-images.githubusercontent.com/90531123/138368173-4cf974f1-4838-4e5d-8ba0-ef9d68e35f36.png)
 
-
 ## API & Data Sample
 
 API Documentation: https://airtable.com/app3Ssx5AebBUdzmn/api/docs
@@ -75,6 +74,7 @@ API Documentation: https://airtable.com/app3Ssx5AebBUdzmn/api/docs
 ```
 
 ## MVP FEATURES
+
 - Home page listing current job applications and clickable links to job details.
 - Detail page for each job application.
 - Form to create new job application tracking.
@@ -82,6 +82,7 @@ API Documentation: https://airtable.com/app3Ssx5AebBUdzmn/api/docs
 - Use CSS to style and create media queries.
 
 ## POST MVP FEATURES
+
 - Change status on homepage list (not just on detail page)
 - Use Bootstrap or MUI to incorporate additional styling.
 - Allow user to edit job details.
@@ -92,31 +93,33 @@ API Documentation: https://airtable.com/app3Ssx5AebBUdzmn/api/docs
 - Add a user log-in so the app can be used in real-life scenarios.
 
 ## Project Schedule
-| Date             | Deliverable      | Status      |
-| :--------------- |:-----------------| :----------:|
-| October 21       | Prep project pitch / draw wireframes / Establish API with Postman      | Complete      |
-| October 22       | Project Pitch / Connect API / Set up React App    | Incomplete      |
-| October 23–24    | Complete homepage and detail page components     | Incomplete      |
-| October 25       | Work on components     | Incomplete      |
-| October 26       | Deploy Project / Work on components     | Incomplete      |
-| October 27       | CSS Styling / Post MVP Goals     | Incomplete      |
-| October 28       | Post MVP goals / Code clean up     | Incomplete      |
-| October 29       | Project presentation     | Incomplete      |
+
+| Date          | Deliverable                                                       |   Status   |
+| :------------ | :---------------------------------------------------------------- | :--------: |
+| October 21    | Prep project pitch / draw wireframes / Establish API with Postman |  Complete  |
+| October 22    | Project Pitch / Connect API / Set up React App                    |  Complete  |
+| October 23–24 | Complete homepage and detail page components                      |  Complete  |
+| October 25    | Work on components                                                |  Complete  |
+| October 26    | Deploy Project / Work on components                               |  Complete  |
+| October 27    | CSS Styling / Post MVP Goals                                      |  Complete  |
+| October 28    | Post MVP goals / Code clean up                                    | Incomplete |
+| October 29    | Project presentation                                              | Incomplete |
 
 ## Project Timeframe:
-| Component                        | Priority  | Estimated Time  | Actual Time  |
-| :------------------------------- |:---------:|:---------------:|:------------:|
-| item here                        | H         | x hrs           | x hrs        |
-| item here                        | H         | x hrs           | x hrs        |
-| item here                        | H         | x hrs           | x hrs        |
-| item here                        | H         | x hrs           | x hrs        |
-| item here                        | H         | x hrs           | x hrs        |
-| item here                        | H         | x hrs           | x hrs        |
-| item here                        | H         | x hrs           | x hrs        |
-| item here                        | H         | x hrs           | x hrs        |
-| item here                        | H         | x hrs           | x hrs        |
-| item here                        | L         | x hrs           | x hrs        |
-| item here                        |           | xx hrs          | xx hrs       |
+
+| Component | Priority | Estimated Time | Actual Time |
+| :-------- | :------: | :------------: | :---------: |
+| item here |    H     |     x hrs      |    x hrs    |
+| item here |    H     |     x hrs      |    x hrs    |
+| item here |    H     |     x hrs      |    x hrs    |
+| item here |    H     |     x hrs      |    x hrs    |
+| item here |    H     |     x hrs      |    x hrs    |
+| item here |    H     |     x hrs      |    x hrs    |
+| item here |    H     |     x hrs      |    x hrs    |
+| item here |    H     |     x hrs      |    x hrs    |
+| item here |    H     |     x hrs      |    x hrs    |
+| item here |    L     |     x hrs      |    x hrs    |
+| item here |          |     xx hrs     |   xx hrs    |
 
 ## SWOT Analysis:
 
@@ -130,9 +133,8 @@ The execution of the API and actually creating the routes and links correctly ca
 
 **Opportunities:**
 
-There is a lot of opportunity in my Post MVP goals to learn more concepts and challenge my app to be more usable in real life. 
+There is a lot of opportunity in my Post MVP goals to learn more concepts and challenge my app to be more usable in real life.
 
 **Threats:**
 
 Time will be a threat — it will be important to stay organized and focus on the completion of the MVP goals first and not get caught up in the desire to make everything perfect up front.
-
