@@ -1,4 +1,5 @@
 import quotes from '../quotes.json'
+import './Quotes.css'
 import { useEffect, useState } from "react"
 
 
