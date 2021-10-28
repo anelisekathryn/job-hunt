@@ -8,7 +8,7 @@ import Dropdown from 'react-bootstrap/Dropdown'
 
 const API_URL = `https://api.airtable.com/v0/app3Ssx5AebBUdzmn/Table%201?view=Grid%20view&api_key=${process.env.REACT_APP_API_KEY}`
 
-const AddJob = ({toggleFetch, setToggleFetch}) => {
+const AddJob = ({ toggleFetch, setToggleFetch }) => {
 
   const [name, setName] = useState('');
   const [company, setCompany] = useState('');
@@ -41,16 +41,16 @@ const AddJob = ({toggleFetch, setToggleFetch}) => {
     await axios.post(API_URL, newJob);
     setRedirectHome(true);
     setToggleFetch(!toggleFetch);
-  }
+  };
 
   if (redirectHome) {
     return <Redirect to="/" />
-  }
+  };
 
   const handleSelect = (e) => {
     console.log(e)
     setStatus(e)
-  }
+  };
 
   return (
     <div>
@@ -92,7 +92,7 @@ const AddJob = ({toggleFetch, setToggleFetch}) => {
           <Form.Label htmlFor="description">Job Description: </Form.Label>
           <Form.Control
             as="textarea"
-            style={{ height: '100px'}}
+            style={{ height: '100px' }}
             type="text"
             id="description"
             value={description}
@@ -118,7 +118,7 @@ const AddJob = ({toggleFetch, setToggleFetch}) => {
           <Form.Label htmlFor="notes">Notes: </Form.Label>
           <Form.Control
             as="textarea"
-            style={{ height: '100px'}}
+            style={{ height: '100px' }}
             type="text"
             id="notes"
             value={notes}
@@ -131,6 +131,6 @@ const AddJob = ({toggleFetch, setToggleFetch}) => {
 
     </div>
   )
-}
+};
 
 export default AddJob;

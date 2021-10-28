@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
-const Job = ({job}) => {
+
+const Job = ({ job }) => {
 
   let color;
   switch (job.fields.status) {
@@ -22,29 +23,31 @@ const Job = ({job}) => {
     case 'Archived':
       color = 'white'
       break;
+    default:
+      color = 'white'
   }
 
   return (
     <div>
-      <div key={job.id} className="job-list">
-          <Link to={"/job/" + job.id} key={job.id}>
+      <div className="job-list">
+        <Link to={"/job/" + job.id} key={job.id}>
           <div className="job-text">
-              <div className="left-text">
-                <p>{job.fields.name}</p>
-              </div>   
+            <div className="left-text">
+              <p>{job.fields.name}</p>
+            </div>
             <div
               className="right-text"
               style={{
                 backgroundColor: color
               }}
             >
-                <p>{job.fields.status}</p>
-              </div>
+              <p>{job.fields.status}</p>
+            </div>
           </div>
-          </Link>
-        </div>
+        </Link>
+      </div>
     </div>
   )
-}
+};
 
 export default Job;

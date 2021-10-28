@@ -21,14 +21,11 @@ const JobEdit = ({ jobs, toggleFetch, setToggleFetch }) => {
   const [salary, setSalary] = useState(jobInfo.fields.salary);
   const [link, setLink] = useState(jobInfo.fields.link);
   const [notes, setNotes] = useState(jobInfo.fields.notes);
-  // const params = useParams();
   const [redirectHome, setRedirectHome] = useState(false)
   
-
   const handleEdit = async (ev) => {
     ev.preventDefault(ev);
     console.log('edit submitted')
-
     const editJob = {
       records: [
         {
@@ -45,22 +42,20 @@ const JobEdit = ({ jobs, toggleFetch, setToggleFetch }) => {
         }
       ]
     }
-
     await axios.put(EDIT_URL, editJob)
     setRedirectHome(true);
     setToggleFetch(!toggleFetch);
-
-  }
+  };
 
   if (redirectHome) {
     // return <Redirect to={`/edit/rec${id}`}/>
-    return <Redirect to="/"/>
-  }
+    return <Redirect to="/" />
+  };
 
   const handleSelect = (e) => {
     console.log(e)
     setStatus(e)
-  }
+  };
 
   return (
     <div>
@@ -99,7 +94,7 @@ const JobEdit = ({ jobs, toggleFetch, setToggleFetch }) => {
           <Form.Label htmlFor="description">Job Description: </Form.Label>
           <Form.Control
             as="textarea"
-            style={{ height: '100px'}}
+            style={{ height: '100px' }}
             type="text"
             id="description"
             value={description}
@@ -125,7 +120,7 @@ const JobEdit = ({ jobs, toggleFetch, setToggleFetch }) => {
           <Form.Label htmlFor="notes">Notes: </Form.Label>
           <Form.Control
             as="textarea"
-            style={{ height: '100px'}}
+            style={{ height: '100px' }}
             type="text"
             id="notes"
             value={notes}
@@ -137,6 +132,6 @@ const JobEdit = ({ jobs, toggleFetch, setToggleFetch }) => {
       </form>
     </div>
   )
-}
+};
 
 export default JobEdit;

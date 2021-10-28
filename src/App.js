@@ -14,7 +14,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const API_URL = `https://api.airtable.com/v0/app3Ssx5AebBUdzmn/Table%201?view=Grid%20view&api_key=${process.env.REACT_APP_API_KEY}`
 
-// console.log(process.env.REACT_APP_API_KEY);
 
 function App() {
   const [jobs, setJobs] = useState([])
@@ -107,7 +106,7 @@ function App() {
       </footer>
 
     </div>
-  );
-}
+  )
+};
 
 export default App;
