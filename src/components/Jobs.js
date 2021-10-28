@@ -14,49 +14,49 @@ const JobList = ({ jobs }) => {
   //   setStatus(e)
   // }
 
-  const changeStatusColor = () => {
-    let color;
-    if (jobs.fields.status === 'Interviewing') {
-      color = 'green';
-    } else {
-      color = 'white';
-    }
-    return color;
-  }
+  // let color;
+
+  // switch (job.fields.status) {
+  //   case 'Application In Progress':
+  //     color = 'yellow'
+  //     break;
+  //   case 'Application Submitted':
+  //     color = 'pink'
+  //     break;
+  //   case 'Interviewing':
+  //     color = 'red'
+  //     break;
+  //   case 'Final Interview':
+  //     color = 'blue'
+  //     break;
+  //   case 'Offer Accepted':
+  //     color = 'green'
+  //     break;
+  //   case 'Archived':
+  //     color = 'grey'
+  //     break;
+  // }
 
   return (
     <div className="job-list">
       {jobs.map((job) => (
+        // insert job component here with job={job} lines 44–60
         <div key={job.id} className="job-list">
+          <Link to={"/job/" + job.id} key={job.id}>
           <div className="job-text">
-            <Link to={"/job/" + job.id} key={job.id}>
               <div className="left-text">
                 <p>{job.fields.name}</p>
-              </div>
-            </Link>    
+              </div>   
             <div
               className="right-text"
-              style={{
-                backgroundColor: {changeStatusColor}
-              }}
+              // style={{
+              //   backgroundColor: color
+              // }}
             >
                 <p>{job.fields.status}</p>
-                
-                {/* <DropdownButton
-                  title={job.fields.status}
-                  id="dropdown-menu"
-                  onSelect={handleSelect}
-                >
-                  <Dropdown.Item eventKey="Application In Progress">Application In Progress</Dropdown.Item>
-                  <Dropdown.Item eventKey="Application Submitted">Application Submitted</Dropdown.Item>
-                  <Dropdown.Item eventKey="Interviewing">Interviewing</Dropdown.Item>
-                  <Dropdown.Item eventKey="Final Interview">Final Interview</Dropdown.Item>
-                  <Dropdown.Item eventKey="Offer Accepted">Offer Accepted</Dropdown.Item>
-                  <Dropdown.Item eventKey="Archived">Archived</Dropdown.Item>
-                </DropdownButton> */}
-
               </div>
-            </div>
+          </div>
+          </Link>
         </div>
       ))}
 
