@@ -5,9 +5,14 @@
   margin: 0 auto;
 }
 
+.resource-links {
+  margin: 50px 0 20px 0;
+}
+
 .resource-links h4 {
   font-weight: 500;
   text-transform: uppercase;
+  padding-bottom: 18px;
 }
 
 .link-container a {

@@ -48,6 +48,9 @@ function App() {
 
       <Route path="/" exact>
         <div>
+          <h2>Job Hunt Status Summary</h2>
+        </div>  
+        <div>
             <JobList
               jobs={jobs}
             />
