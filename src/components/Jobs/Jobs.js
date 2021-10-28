@@ -1,5 +1,5 @@
 import './Jobs.css'
-import Job from './Job.js'
+import Job from './Job/Job.js'
 
 
 const JobList = ({ jobs }) => {
