@@ -2,6 +2,8 @@
 
 https://github.com/anelisekathryn/job-hunt
 
+https://stoic-mestorf-ba9f0f.netlify.app/
+
 This app is designed to organize of all those job applications when you're on the hunt for a new career. Enter important job details and keep track of your application status.
 
 ## Wireframes

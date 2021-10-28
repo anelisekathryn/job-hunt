@@ -43,13 +43,13 @@ const AddJob = ({ toggleFetch, setToggleFetch }) => {
     setToggleFetch(!toggleFetch);
   };
 
-  if (redirectHome) {
-    return <Redirect to="/" />
-  };
-
   const handleSelect = (e) => {
     console.log(e)
     setStatus(e)
+  };
+
+  if (redirectHome) {
+    return <Redirect to="/" />
   };
 
   return (
