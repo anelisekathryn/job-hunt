@@ -11,8 +11,10 @@
   background-color: #6c4c8b;
   color: white;
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 18px 10px 18px;
+  font-weight: 500;
 }
+
 .add-button a:hover {
   background-color: #9448bc;
   color: white;
@@ -35,14 +37,15 @@
     align-items: center;
     padding: 10px 80px;
     margin-bottom: 70px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
   }
 
   .desk-nav a {
     color: white;
     display: inline-block;
     padding: 10px;
-    font-size: 1.2em;
-    font-weight: 700;
     text-decoration: none;
   }
 
@@ -68,6 +71,8 @@
     align-items: center;
     padding: 30px 80px 30px 0;
     margin-bottom: 35px;
+    text-transform: uppercase;
+    font-size: 14px;
   }
 
   .mobile-nav a {
@@ -118,6 +123,7 @@
   padding: 2em 1em 0;
   font-size: 1em;
   width: 200px;
+  font-weight: 500;
 }
 
 /* QUOTE BOX ======================================== */
@@ -135,7 +141,7 @@
   margin: 30px 0 20px 0;
 }
 
-/* FOOTER =========================================== */
+/* FOOTER --> MOBILE ================================== */
 
 footer {
   background-color: #4c2853;
@@ -162,11 +168,16 @@ footer a:hover {
   text-align: center;
   line-height: 0.5;
   padding: 25px 0 10px 15px;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.right-footer a {
+  font-weight: 500;
 }
 
 .left-footer {
-  /* display: none; */
+  display: none;
   text-align: center;
   line-height: 1.6;
   padding: 10px 15px 0px 15px;
@@ -185,7 +196,14 @@ footer a:hover {
   .right-footer {
     text-align: right;
     padding: 22px 15px 10px 0;
-    font-size: 14px;
+    font-size: 14.5px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 470px) {
+  .right-footer a {
+    font-weight: 500;
   }
 }
 
@@ -193,5 +211,13 @@ footer a:hover {
   .left-footer {
     text-align: left;
     padding: 10px 0 10px 15px;
+  }
+}
+
+@media (min-width: 470px) {
+  .left-footer a {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
   }
 }

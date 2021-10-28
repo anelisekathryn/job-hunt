@@ -98,7 +98,7 @@ function App() {
             <Link to="/">Archived Jobs</Link>
           </div>
           <div className="right-footer">
-            <p>Site created by Anelise Kathryn</p>
+            <p>Site created by <a href="https://www.linkedin.com/in/anelisebergin/" target="_blank" rel="noreferrer">Anelise Kathryn</a></p>
             <p>See what else I'm working on: <a href="https://github.com/anelisekathryn" target="_blank" rel="noreferrer">GitHub</a></p>
             <p>Quotes provided by <a href="https://zenquotes.io/" target="_blank" rel="noreferrer">ZenQuotes API</a></p>
           </div>
