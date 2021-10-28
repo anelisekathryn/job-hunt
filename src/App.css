@@ -42,7 +42,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 60px;
+    padding: 0px 60px;
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 700;
@@ -58,6 +58,10 @@ h2 {
 
   .desk-nav a:hover {
     color: white;
+  }
+
+  .desk-nav img {
+    width: 10vw;
   }
 }
 

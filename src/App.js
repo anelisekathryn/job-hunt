@@ -33,7 +33,7 @@ function App() {
     <div className="App">
 
       <nav className="desk-nav">
-        <Link to="/">Home</Link>
+        <Link to="/"><img src="https://i.imgur.com/SwxKYbZ.png" alt="home"/></Link>
         <Link to="/addajob">Add a Job</Link>
       </nav>
 

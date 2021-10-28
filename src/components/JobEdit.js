@@ -48,7 +48,6 @@ const JobEdit = ({ jobs, toggleFetch, setToggleFetch }) => {
   };
 
   if (redirectHome) {
-    // return <Redirect to={`/edit/rec${id}`}/>
     return <Redirect to="/" />
   };
 
@@ -59,6 +58,8 @@ const JobEdit = ({ jobs, toggleFetch, setToggleFetch }) => {
 
   return (
     <div>
+      <h4>Edit Job Details:</h4>
+      <br />
       <form onSubmit={handleEdit} className="form-container">
         <Form.Group className="mb-3">
           <Form.Label htmlFor="name">Job Name: </Form.Label>
