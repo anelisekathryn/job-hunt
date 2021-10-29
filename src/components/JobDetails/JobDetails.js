@@ -9,7 +9,6 @@ const JobDetails = ({jobs}) => {
   const { id } = useParams();
 
   const jobInfo = jobs.find((jobInfo) => jobInfo.id === id);
-  console.log(jobInfo)
 
   let color;
   switch (jobInfo.fields.status) {

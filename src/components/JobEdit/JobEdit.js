@@ -25,7 +25,6 @@ const JobEdit = ({ jobs, toggleFetch, setToggleFetch }) => {
   
   const handleEdit = async (ev) => {
     ev.preventDefault(ev);
-    console.log('edit submitted')
     const editJob = {
       records: [
         {
@@ -48,7 +47,6 @@ const JobEdit = ({ jobs, toggleFetch, setToggleFetch }) => {
   };
 
   const handleSelect = (e) => {
-    console.log(e)
     setStatus(e)
   };
   

@@ -20,10 +20,8 @@ function App() {
   const [toggleFetch, setToggleFetch] = useState(true)
   
   useEffect(() => {
-    console.log('getting jobs')
     const getJobs = async () => {
       const resp = await axios.get(API_URL);
-      console.log(resp.data);
       setJobs(resp.data.records);
     }
     getJobs();
@@ -107,7 +105,7 @@ function App() {
           </div>
         </div>
       </footer>
-
+      
     </div>
   )
 };

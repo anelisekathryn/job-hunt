@@ -21,8 +21,6 @@ const AddJob = ({ toggleFetch, setToggleFetch }) => {
 
   const handleSubmit = async (ev) => {
     ev.preventDefault();
-    console.log('submitted')
-
     const newJob = {
       records: [
         {
@@ -44,7 +42,6 @@ const AddJob = ({ toggleFetch, setToggleFetch }) => {
   };
 
   const handleSelect = (e) => {
-    console.log(e)
     setStatus(e)
   };
 
@@ -128,7 +125,6 @@ const AddJob = ({ toggleFetch, setToggleFetch }) => {
           <input className="submit-button" type="submit"></input>
         </Form.Group>
       </form>
-
     </div>
   )
 };
