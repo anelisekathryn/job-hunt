@@ -45,7 +45,7 @@ function App() {
       </nav>
 
       <Route path="/" exact>
-        <div>
+        <div className="main-title">
           <h2>Job Hunt Status Summary</h2>
         </div>  
         <div>
@@ -105,7 +105,7 @@ function App() {
           </div>
         </div>
       </footer>
-      
+
     </div>
   )
 };
