@@ -109,19 +109,20 @@ API Documentation: https://airtable.com/app3Ssx5AebBUdzmn/api/docs
 
 ## Project Timeframe:
 
-| Component | Priority | Estimated Time | Actual Time |
-| :-------- | :------: | :------------: | :---------: |
-| item here |    H     |     x hrs      |    x hrs    |
-| item here |    H     |     x hrs      |    x hrs    |
-| item here |    H     |     x hrs      |    x hrs    |
-| item here |    H     |     x hrs      |    x hrs    |
-| item here |    H     |     x hrs      |    x hrs    |
-| item here |    H     |     x hrs      |    x hrs    |
-| item here |    H     |     x hrs      |    x hrs    |
-| item here |    H     |     x hrs      |    x hrs    |
-| item here |    H     |     x hrs      |    x hrs    |
-| item here |    L     |     x hrs      |    x hrs    |
-| item here |          |     xx hrs     |   xx hrs    |
+| Component                                    | Priority | Estimated Time | Actual Time |
+| :------------------------------------------- | :------: | :------------: | :---------: |
+| App.js + Component Structure                 |    H     |     3 hrs      |    4 hrs    |
+| Connect API / Data load on homepage          |    H     |     3 hrs      |    2 hrs    |
+| Nav & Footer Set-Up                          |    H     |     2 hrs      |    2 hrs    |
+| Job Detail Component                         |    H     |     4 hrs      |    3 hrs    |
+| Job Add Component                            |    H     |     4 hrs      |    4 hrs    |
+| Job Edit Component                           |    H     |     5 hrs      |    5 hrs    |
+| Quotes Block                                 |    H     |     2 hrs      |    2 hrs    |
+| Resource Links                               |    H     |     1 hrs      |    1 hrs    |
+| Conditional Styling (status + media queries) |    H     |     4 hrs      |    5 hrs    |
+| Final Styling                                |    H     |     5 hrs      |    6 hrs    |
+| Final Code Clean Ups / Org                   |    L     |     1 hrs      |    2 hrs    |
+|                                              |          |     35 hrs     |   36 hrs    |
 
 ## SWOT Analysis:
 
